@@ -43,14 +43,14 @@ As Senia interacts with your patients on WhatsApp, it collects and processes:
 
 ## How data is protected
 
-Senia implements technical and administrative safeguards proportional to the sensitivity of health data. The following measures are in place in the production environment:
+Senia implements technical and administrative safeguards proportional to the sensitivity of health data. The following measures are in place:
 
-- **TLS encryption in transit** — all connections between patients, your clinic, and the Senia platform are encrypted
-- **Row-level security** — each clinic's data is isolated at the database level using PostgreSQL row-level security (RLS), so no clinic can ever access another's data
+- **Encryption in transit** — all connections between patients, your clinic, and the Senia platform are encrypted using TLS
+- **Data isolation** — each clinic's data is completely isolated; no clinic can ever access another clinic's data
 - **Secure credential storage** — service keys and API credentials are confined to the server side and never exposed to the client
 - **Automatic media expiry** — audio files and media received via WhatsApp are automatically deleted after 30 days
 - **AI interaction logs** — all AI responses are logged for traceability, allowing you to audit what Senia said to any patient at any time
-- **Managed backups** — the database is backed up with Point-in-Time Recovery enabled, protecting against accidental data loss
+- **Backup and recovery** — the platform uses managed backups to protect against accidental data loss
 - **Staff training** — Senia's team receives regular training in data protection practices
 
 ---
