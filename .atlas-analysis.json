@@ -1,0 +1,81 @@
+{
+  "projectType": "saas",
+  "projectName": "Senia",
+  "projectDescription": "Senia is an AI-powered virtual receptionist for medical clinics that automatically handles patient conversations on WhatsApp, manages appointment scheduling, and integrates with leading clinic management systems — so your team can focus on care, not admin.",
+  "theme": "almond",
+  "primaryColor": "#0dc3dc",
+  "lightColor": "#7bdbeb",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "onboarding"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/whatsapp-assistant",
+              "features/appointment-scheduling",
+              "features/automated-reminders",
+              "features/knowledge-base"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/dashboard",
+              "platform/conversations",
+              "platform/agenda",
+              "platform/settings"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/clinic-systems",
+              "integrations/whatsapp",
+              "integrations/google-calendar"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting",
+              "privacy-and-data"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "24/7 AI receptionist via WhatsApp",
+    "Automated appointment scheduling, confirmation, and reminders",
+    "Human handoff with full conversation context",
+    "Integration with Feegow, Clinicorp, Gestão DS, App Health, Controle Odonto, Visual Asa, and any open-API system",
+    "Real-time dashboard with appointments and active conversation metrics",
+    "Customizable knowledge base (RAG) trained on your clinic's protocols",
+    "Automatic follow-up reminders for return appointments",
+    "Assisted onboarding with automated test battery before going live"
+  ],
+  "publicApiSurface": [
+    "WhatsApp Business API integration",
+    "ERP/clinic system integrations (Feegow, Clinicorp, Gestão DS, Controle Odonto, App Health, Visual Asa)",
+    "Google Calendar integration",
+    "Open API integration for custom clinic systems",
+    "Dashboard (appointments, conversations, KPIs)",
+    "Knowledge base configuration (AI training)",
+    "Professional and schedule management",
+    "Patient conversation history"
+  ]
+}

@@ -1,72 +1,81 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Senia",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "primary": "#0dc3dc",
+    "light": "#7bdbeb"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://media.brand.dev/70b2d06d-e2bd-430c-9cd7-fe6b505f3920.png",
+    "dark": "https://media.brand.dev/70b2d06d-e2bd-430c-9cd7-fe6b505f3920.png"
+  },
+  "favicon": "https://media.brand.dev/5ac4227f-aca2-4818-aa6b-b52c39aa97ba.png",
+  "font": {
+    "headings": {
+      "family": "DM Sans"
+    },
+    "body": {
+      "family": "DM Sans"
+    }
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Book a Demo",
+      "href": "https://wa.me/5521984741310?text=Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20para%20conhecer%20a%20senia!"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "onboarding"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/whatsapp-assistant",
+              "features/appointment-scheduling",
+              "features/automated-reminders",
+              "features/knowledge-base"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/dashboard",
+              "platform/conversations",
+              "platform/agenda",
+              "platform/settings"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/clinic-systems",
+              "integrations/whatsapp",
+              "integrations/google-calendar"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting",
+              "privacy-and-data"
+            ]
+          }
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

@@ -1,0 +1,74 @@
+---
+title: "Senia Dashboard: Real-Time Clinic Overview"
+sidebarTitle: "Dashboard"
+description: "Monitor appointments, active WhatsApp conversations, and key clinic metrics from the Senia dashboard — all updated in real time."
+---
+
+The Dashboard is the first screen you see when you log into Senia. It gives you a live snapshot of your clinic's activity — no need to jump between tabs. Every number updates in real time, so you always know exactly what is happening at your clinic, whether you are on-site or checking in remotely.
+
+## What you can see
+
+The Dashboard surface is divided into a set of widgets, each focused on a different aspect of your clinic's day. At a glance you can monitor:
+
+<CardGroup cols={2}>
+  <Card title="Today's Appointments" icon="calendar-check" href="/platform/agenda">
+    The total number of appointments scheduled for today, broken down by status: confirmed, pending confirmation, completed, and cancelled.
+  </Card>
+  <Card title="Active Conversations" icon="comments" href="/platform/conversations">
+    The number of WhatsApp chats Senia is actively managing right now — including both fully automated exchanges and those that have been handed off to a staff member.
+  </Card>
+  <Card title="Messages Exchanged Today" icon="message" href="/platform/conversations">
+    A running count of all messages sent and received across every patient conversation since midnight.
+  </Card>
+  <Card title="Patient Satisfaction Score" icon="star" href="/platform/conversations">
+    Your clinic's average satisfaction rating, collected automatically from patients at the end of each conversation — scored on a scale of 0 to 10.
+  </Card>
+  <Card title="Automated vs. Handed-Off" icon="robot" href="/platform/conversations">
+    A split showing how many conversations Senia resolved entirely on her own versus how many were transferred to a human team member.
+  </Card>
+  <Card title="Daily Availability" icon="clock" href="/platform/agenda">
+    The number of hours during which Senia was actively available to receive and respond to patient messages today.
+  </Card>
+</CardGroup>
+
+## Reading the metrics
+
+Understanding what each number means helps you act on it quickly.
+
+**Active conversations**
+These are chats Senia is currently handling — patients who have sent at least one message that has not yet reached a resolution. A spike in active conversations early in the morning usually reflects overnight messages queued up while your clinic was closed. Senia handles them automatically so that patients already have answers waiting when they wake up.
+
+**Automated rate**
+This is the percentage of conversations that Senia resolved from start to finish without any human intervention. A high automated rate means your knowledge base is well-configured and your patients' most common questions are well covered. If the rate dips, it is a signal that new topics have come up that are worth adding to your knowledge base in [Settings](/platform/settings).
+
+**Satisfaction score**
+Senia collects a quick rating at the close of each conversation, asking patients to score their experience on a scale of 0 to 10. Your Dashboard shows a rolling average across all scored conversations. A score above 8 is a strong indicator that patients find the interaction helpful and professional. Scores below 7 are worth investigating — open the [Conversations](/platform/conversations) view and look for patterns in the transcripts.
+
+**Messages exchanged today**
+This counter covers every message in both directions: patient messages in, Senia responses out, and any replies sent by your staff during a handoff. It gives you a sense of overall volume and helps you spot unusually busy days.
+
+**Conversations handled automatically vs. transferred to human**
+This breakdown sits alongside the automated rate and lets you see the raw numbers rather than just a percentage. If ten conversations were transferred today, you can click through to [Conversations](/platform/conversations) to review each one and decide whether any of them reveal a gap in Senia's training.
+
+## Using the dashboard daily
+
+Build a simple daily habit around the Dashboard and you will always stay on top of your clinic's communication.
+
+<Steps>
+  <Step title="Check first thing in the morning">
+    Open the Dashboard before your team starts their shift. Review the messages Senia handled overnight — you will see whether any conversations were flagged for human follow-up so your staff can prioritise them as soon as they arrive.
+  </Step>
+  <Step title="Review flagged conversations">
+    Conversations marked as handed off appear highlighted in the active list. Click through to the [Conversations](/platform/conversations) view to read the full transcript and respond if needed. The patient will receive your reply in the same WhatsApp thread.
+  </Step>
+  <Step title="Monitor the satisfaction score weekly">
+    Check your rolling satisfaction score at the end of each week. If it drops, review that week's conversation transcripts to identify recurring issues, then update your knowledge base in [Settings](/platform/settings) accordingly.
+  </Step>
+  <Step title="Track appointment volume trends">
+    Compare today's appointment count against the previous week. A sudden drop in confirmed bookings may indicate an availability issue in the [Agenda](/platform/agenda) — for example, a professional's schedule that was not updated after a holiday.
+  </Step>
+</Steps>
+
+<Tip>
+  A high automated rate (above 80%) means Senia's knowledge base is well-configured for your clinic. If you are consistently below that threshold, head to **Settings → Knowledge base** and add answers to the topics that most commonly trigger a human handoff.
+</Tip>

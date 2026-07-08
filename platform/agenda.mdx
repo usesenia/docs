@@ -1,0 +1,104 @@
+---
+title: "Agenda: Manage Your Clinic's Schedule in Senia"
+sidebarTitle: "Agenda"
+description: "Configure professionals, services, and availability in Senia's integrated agenda so patients can book appointments automatically through WhatsApp."
+---
+
+The Agenda section is where you manage your clinic's schedule. Senia reads availability from the Agenda in real time, so the appointments patients book through WhatsApp are always accurate — no double-bookings, no slots offered for professionals who are on leave, and no appointments scheduled outside your configured working hours.
+
+## Adding professionals
+
+Each professional at your clinic needs a profile in the Agenda before Senia can book appointments on their behalf.
+
+<Steps>
+  <Step title="Open the Professionals panel">
+    In the Agenda section, select **Professionals** from the left menu, then click **Add professional**.
+  </Step>
+  <Step title="Enter the professional's details">
+    Fill in the following fields:
+
+    - **Full name** — as you want it to appear to patients during booking.
+    - **Specialty** — for example, Physiotherapy, Dentistry, or Psychology.
+    - **CRM / professional registration number** — required for medical professionals in Brazil.
+    - **Profile photo** (optional) — shown in the booking flow so patients recognise who they are booking with.
+  </Step>
+  <Step title="Set working hours">
+    Define the professional's availability for each day of the week. For each active day, set a start time and an end time. You can configure a lunch break or mid-day gap by splitting the day into two time blocks — for example, 08:00–12:00 and 14:00–18:00.
+  </Step>
+  <Step title="Save the profile">
+    Click **Save**. The professional is immediately available for scheduling. Senia will start offering their slots to patients as soon as you link them to at least one service.
+  </Step>
+</Steps>
+
+## Configuring services
+
+Services define what patients can book. Each service is linked to one or more professionals so Senia knows who to schedule when a patient requests it.
+
+<Steps>
+  <Step title="Open the Services panel">
+    In the Agenda section, select **Services**, then click **Add service**.
+  </Step>
+  <Step title="Fill in the service details">
+    Complete the following fields:
+
+    - **Service name** — for example, Initial Consultation, Return Visit, or Acupuncture Session.
+    - **Duration** — how long the appointment lasts, in minutes. Senia uses this to block the correct amount of time in the professional's diary.
+    - **Associated professionals** — select every professional who performs this service. Senia will offer available slots across all of them.
+    - **Price** — the patient-facing price for this service.
+    - **Deposit required** — toggle on if you require a deposit to confirm the booking. Enter the deposit amount and the PIX key or payment instructions that Senia will send automatically after the patient chooses a slot.
+  </Step>
+  <Step title="Save the service">
+    Click **Save**. The service is immediately available in the booking flow.
+  </Step>
+</Steps>
+
+<Info>
+  If you require a deposit, Senia sends the payment instructions automatically at the end of the booking conversation — no manual follow-up needed. The appointment is held as **pending confirmation** until the deposit is received or you confirm it manually.
+</Info>
+
+## Setting availability
+
+Beyond daily working hours, you can fine-tune each professional's schedule to handle real-world complexity.
+
+<Steps>
+  <Step title="Add exceptions">
+    Use the **Exceptions** calendar to block specific dates — public holidays, vacation periods, or one-off absences. Senia will not offer any slots on blocked dates, even if they fall within the professional's regular working hours.
+  </Step>
+  <Step title="Configure buffer time">
+    Set a buffer period between appointments to give professionals time to prepare, clean the room, or update patient notes. For example, a 10-minute buffer after a 50-minute session means the next slot opens at the 60-minute mark, not the 50-minute mark.
+  </Step>
+  <Step title="Set a booking window">
+    Define how far in advance patients can book. For example, you can allow bookings up to 60 days ahead and no less than 2 hours before the appointment time.
+  </Step>
+</Steps>
+
+<Note>
+  Changes to availability take effect immediately — Senia will only offer patients slots that match the updated schedule. If you need to block a date urgently, add the exception and it will apply to all new conversations at once.
+</Note>
+
+## Syncing with your clinic system
+
+If your clinic already uses a practice management system, Senia connects to it so that both systems always reflect the same schedule.
+
+<CardGroup cols={2}>
+  <Card title="Feegow" icon="link" href="/integrations/clinic-systems">
+    Two-way sync with Feegow keeps appointments aligned in real time. Bookings made through Senia appear in Feegow instantly, and changes made in Feegow are reflected in Senia's availability.
+  </Card>
+  <Card title="Clinicorp" icon="link" href="/integrations/clinic-systems">
+    Connect Clinicorp to push Senia-booked appointments directly into your Clinicorp agenda and pull real-time availability back into Senia.
+  </Card>
+  <Card title="Other systems" icon="plug" href="/integrations/clinic-systems">
+    Senia integrates with any clinic management system that exposes an open API — including Gestão DS, App Health, Controle Odonto, and Visual Asa. See the full list on the integrations page.
+  </Card>
+  <Card title="Google Calendar" icon="calendar" href="/integrations/clinic-systems">
+    Link a Google Calendar to give Senia visibility into a professional's personal schedule and avoid conflicts with external commitments.
+  </Card>
+</CardGroup>
+
+To set up or manage an integration, go to [Settings → Integrations](/platform/settings).
+
+## Built-in agenda vs. your own system
+
+Clinics without a third-party management system can use Senia's built-in digital agenda at no extra cost. It supports multiple professionals, multiple services, exception dates, buffer times, and deposit workflows — everything covered in this guide. You do not need an external system to use any of Senia's scheduling features.
+
+If you later adopt a third-party system, migrating from Senia's built-in agenda to a connected system is straightforward. Contact the Senia support team and they will guide you through the transition without loss of historical data.

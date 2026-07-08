@@ -1,0 +1,138 @@
+---
+title: "Senia Settings: Configure Your Clinic and AI Behavior"
+sidebarTitle: "Settings"
+description: "Customise Senia's persona, reminder timing, knowledge base, integrations, and team access from the Settings section of the Senia platform."
+---
+
+Settings is where you control how Senia behaves — from the name and tone she uses with patients, to when reminders go out, to who on your team has access to the platform. Most changes take effect immediately, so you can adjust and test in real time without any downtime for your patients.
+
+## AI persona
+
+The AI persona settings determine how Senia presents herself to patients on WhatsApp. This is how you make Senia sound like she is a natural part of your team rather than a generic bot.
+
+<Steps>
+  <Step title="Set the display name">
+    Enter the name patients will see when Senia messages them. Many clinics use the name of their actual receptionist, a clinic-branded name like "Equipe [Clinic Name]", or simply "Senia". Whatever name you choose, it appears as the sender name in the WhatsApp conversation.
+  </Step>
+  <Step title="Choose a communication style">
+    Select **Formal** or **Casual** depending on your clinic's culture. A psychology practice may prefer a warmer, more conversational tone; a surgical clinic may want a precise and professional register. Senia applies this style consistently across all messages.
+  </Step>
+  <Step title="Set the language">
+    Brazilian Portuguese is the default. If your clinic serves patients who communicate primarily in another language, you can configure Senia to respond in that language or to detect the patient's language automatically and switch accordingly.
+  </Step>
+</Steps>
+
+<Info>
+  Persona changes apply to all new conversations immediately. Conversations already in progress continue with the style that was active when they started, to avoid a jarring mid-conversation tone shift.
+</Info>
+
+## Reminder templates
+
+Senia sends appointment reminders and return follow-up messages automatically. Use this section to control exactly what those messages say and when they go out.
+
+<Steps>
+  <Step title="Edit reminder text">
+    Open the template editor and customise the copy for each reminder type:
+
+    - **Appointment confirmation** — sent immediately after a booking is made.
+    - **Pre-appointment reminder** — sent before the scheduled appointment time.
+    - **Return follow-up** — sent after a completed appointment to invite the patient to book a return visit.
+
+    Use the available variables — such as `{{patient_name}}`, `{{appointment_date}}`, `{{appointment_time}}`, and `{{professional_name}}` — to personalise each message automatically.
+  </Step>
+  <Step title="Set reminder timing">
+    For each reminder type, choose when Senia sends it:
+
+    - **24 hours before** the appointment
+    - **2 hours before** the appointment
+    - **Custom interval** — enter any number of hours or days
+
+    You can enable multiple reminders for the same appointment. For example, send one 24 hours before and a second 2 hours before.
+  </Step>
+  <Step title="Preview and save">
+    Use the preview panel to see exactly how the message will look in WhatsApp before saving. Click **Save template** to activate the changes.
+  </Step>
+</Steps>
+
+## Knowledge base management
+
+The knowledge base is the source of truth Senia draws on when answering patient questions. Keep it current and your automated rate stays high.
+
+<Steps>
+  <Step title="Add a new entry">
+    Click **Add entry** and provide a question or topic (for example, "What insurance plans do you accept?") along with the correct answer. Senia uses this content to respond to any patient message that touches the same subject.
+  </Step>
+  <Step title="Edit an existing entry">
+    Search or browse the entry list, click the entry you want to update, and edit the content directly. Changes take effect as soon as you save.
+  </Step>
+  <Step title="Remove outdated content">
+    If a service, price, or protocol changes, find the relevant entries and either update them or delete them. Leaving outdated information in the knowledge base is the most common cause of incorrect AI responses.
+  </Step>
+  <Step title="Review flagged entries">
+    Any messages flagged for review from the [Conversations](/platform/conversations) section appear here as a queue. Work through flagged entries to correct the information and prevent the same error from recurring.
+  </Step>
+</Steps>
+
+<Tip>
+  Update the knowledge base any time you add a new service, change pricing, or introduce a new protocol. Senia uses this information immediately — there is no delay and no re-training step required.
+</Tip>
+
+## Team access
+
+Control who can log into Senia and what they can do once they are inside.
+
+<Steps>
+  <Step title="Add a team member">
+    Click **Add member**, enter their name and email address, and select their role. They will receive an invitation email with a link to set their password.
+  </Step>
+  <Step title="Assign a role">
+    Choose one of two roles:
+
+    - **Admin** — full access to all sections, including Settings. Suitable for clinic owners, managers, and lead receptionists.
+    - **Viewer** — read access to the Dashboard and Conversations. Cannot change settings or edit the knowledge base. Suitable for staff who need visibility without the ability to make changes.
+  </Step>
+  <Step title="Configure handoff notifications">
+    For each team member, toggle on **Receive handoff notifications** if you want them to be alerted when Senia transfers a conversation to a human. Only staff members who will actively respond to patients need this enabled.
+  </Step>
+  <Step title="Remove or deactivate a member">
+    To remove access, click the team member's name and select **Deactivate**. Their account is suspended immediately — they cannot log in or receive notifications until reactivated.
+  </Step>
+</Steps>
+
+## Integrations
+
+Link external systems so Senia can read and write data across your existing tools.
+
+<CardGroup cols={2}>
+  <Card title="Clinic management systems" icon="hospital" href="/integrations/overview">
+    Connect Feegow, Clinicorp, Gestão DS, and other systems with an open API. Once linked, appointments flow between Senia and your system in real time.
+  </Card>
+  <Card title="Google Calendar" icon="calendar" href="/integrations/overview">
+    Sync a professional's Google Calendar so Senia can see external commitments and avoid scheduling conflicts.
+  </Card>
+</CardGroup>
+
+To connect a new integration, click **Add integration**, select the system from the list, and follow the authorisation steps. For detailed setup instructions for each supported system, see the [Integrations overview](/integrations/overview).
+
+## Account and billing
+
+Manage your subscription, payment method, and plan details from this panel.
+
+<Steps>
+  <Step title="View your current plan">
+    The billing panel shows your active plan, the number of patients included, and your next renewal date.
+  </Step>
+  <Step title="Update your payment method">
+    Click **Update payment method** to replace the credit card or bank details on file. The new method is charged at the next renewal date.
+  </Step>
+  <Step title="Change your plan">
+    If your clinic grows and you need a higher patient limit, click **Change plan** and select the tier that fits. The upgrade takes effect at the next billing cycle.
+  </Step>
+  <Step title="Cancel your subscription">
+    Click **Cancel subscription** at any time. There is no contract, no cancellation fee, and no minimum term. Your account remains active until the end of the period you have already paid for.
+  </Step>
+</Steps>
+
+<Note>
+  All Senia plans are month-to-month. You can cancel, upgrade, or downgrade at any time with no penalties. Assisted onboarding is included in every plan, regardless of tier.
+</Note>

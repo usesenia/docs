@@ -1,0 +1,59 @@
+---
+title: "Automated Appointment Scheduling via WhatsApp"
+sidebarTitle: "Scheduling"
+description: "Let Senia book, reschedule, and cancel patient appointments directly in WhatsApp conversations, synced with your clinic management system."
+---
+
+Senia can handle the full appointment lifecycle — booking, rescheduling, and cancellation — directly within WhatsApp, without your receptionist needing to intervene. Patients get an immediate, conversational experience; your team gets a calendar that fills itself.
+
+## How scheduling works
+
+When a patient wants to book an appointment, Senia manages the entire flow from first message to confirmed slot.
+
+<Steps>
+  <Step title="Patient requests an appointment">
+    The patient messages your WhatsApp number asking to book a consultation, exam, or treatment session. Senia greets them and asks for any information needed to find the right professional and time slot.
+  </Step>
+  <Step title="Senia checks availability">
+    Senia queries your clinic management system in real time to retrieve up-to-date availability for the requested professional, specialty, or service.
+  </Step>
+  <Step title="Patient selects a slot">
+    Senia presents the available options conversationally and the patient chooses their preferred date and time — all without leaving WhatsApp.
+  </Step>
+  <Step title="Appointment is confirmed">
+    Once the patient confirms (and any deposit requirement is met — see below), Senia registers the appointment in your clinic system and sends the patient a confirmation message with the date, time, professional, and any preparation instructions.
+  </Step>
+</Steps>
+
+## Deposit requirements
+
+Senia can be configured to request a deposit before finalising a booking, helping reduce no-shows before they happen. When a patient selects a slot, Senia sends the PIX payment details and waits for confirmation before locking the appointment.
+
+For example, a physiotherapy clinic might configure the following rule: *"After the patient chooses their session time, request a R$150 PIX deposit to confirm the booking."* Senia sends the PIX key, monitors for the patient's confirmation, and only then registers the appointment — all within the same WhatsApp conversation.
+
+This approach is especially effective for high-demand slots, first-time patients, or specialties where last-minute cancellations have a significant revenue impact.
+
+## Managing availability
+
+Professionals' schedules are configured in the **Platform → Agenda** section. You can define working hours, block times, set appointment durations, and assign rooms or equipment per professional. Senia always works from the most up-to-date availability — if a slot is blocked or already booked, she will not offer it.
+
+Any change you make in the Agenda is reflected immediately in Senia's scheduling responses.
+
+## Rescheduling and cancellations
+
+Patients can request rescheduling or cancellations at any time via WhatsApp — including outside business hours. Senia handles the entire flow: confirming the change, checking new availability, updating the calendar automatically, and sending the patient a revised confirmation.
+
+Your team does not need to touch the calendar for routine rescheduling requests. The updated appointment appears in your clinic system just as if a receptionist had made the change manually.
+
+## Clinics without a management system
+
+If your clinic does not use a third-party clinic management system, Senia includes a built-in digital agenda at no extra cost. The agenda covers all core scheduling needs — appointments, professionals, rooms, and availability — and is accessible directly from the Senia platform. You get all the automation benefits of Senia's scheduling without needing to adopt a separate system.
+
+<CardGroup cols={2}>
+  <Card title="Managing the Agenda" icon="calendar-days" href="/platform/agenda">
+    Configure professional schedules, availability rules, and appointment types in the Platform Agenda.
+  </Card>
+  <Card title="Clinic System Integrations" icon="plug" href="/integrations/clinic-systems">
+    See which clinic management systems Senia integrates with and how to connect yours.
+  </Card>
+</CardGroup>

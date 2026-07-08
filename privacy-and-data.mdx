@@ -1,0 +1,101 @@
+---
+title: "How Senia Handles Your Clinic and Patient Data"
+sidebarTitle: "Privacy & Data"
+description: "Learn how Senia collects, stores, and protects clinic and patient data — including LGPD compliance, data retention periods, and your rights as a data controller."
+---
+
+Senia handles sensitive health data on behalf of your clinic. This page summarises how your data and your patients' data are collected, stored, and protected — and what your responsibilities are as the data controller.
+
+---
+
+## Your role and Senia's role
+
+Under Brazil's LGPD (Lei Geral de Proteção de Dados — Lei nº 13.709/2018), every processing activity involving personal data must identify a **controller** and, where applicable, a **processor**.
+
+**Your clinic is the data controller.** You decide the purpose and the means of processing patient data — what information is collected, why it is collected, and how it is used. That responsibility stays with you.
+
+**Senia is the data processor (operadora).** Senia processes personal data on your behalf and under your instructions, strictly to deliver the services you have subscribed to. Senia is operated by AILA TECNOLOGIA DA INFORMACAO LTDA (CNPJ 63.341.848/0001-02), based in São Paulo, SP. The relationship between your clinic and Senia is governed by a Data Processing Agreement (DPA), which forms part of your service contract.
+
+---
+
+## What data Senia collects
+
+### Clinic data
+
+When you set up your account, Senia collects the information needed to configure and run your virtual receptionist:
+
+- Clinic name, CNPJ, address, and contact information
+- Names, CRM registration numbers, specialties, and schedules of your healthcare professionals
+- Services offered, pricing, and health plan (convênio) details
+- API credentials and configuration data for integrations with your clinic management system and Google Calendar
+
+### Patient data
+
+As Senia interacts with your patients on WhatsApp, it collects and processes:
+
+- Full name, CPF, and date of birth
+- Phone number and WhatsApp contact information
+- Appointment history (dates, times, professionals, and status)
+- Full transcripts of conversations with the AI receptionist
+- Health plan (convênio) information provided during scheduling
+
+---
+
+## How data is protected
+
+Senia implements technical and administrative safeguards proportional to the sensitivity of health data. The following measures are in place in the production environment:
+
+- **TLS encryption in transit** — all connections between patients, your clinic, and the Senia platform are encrypted
+- **Row-level security** — each clinic's data is isolated at the database level using PostgreSQL row-level security (RLS), so no clinic can ever access another's data
+- **Secure credential storage** — service keys and API credentials are confined to the server side and never exposed to the client
+- **Automatic media expiry** — audio files and media received via WhatsApp are automatically deleted after 30 days
+- **AI interaction logs** — all AI responses are logged for traceability, allowing you to audit what Senia said to any patient at any time
+- **Managed backups** — the database is backed up with Point-in-Time Recovery enabled, protecting against accidental data loss
+- **Staff training** — Senia's team receives regular training in data protection practices
+
+---
+
+## Data retention
+
+Senia retains different types of data for different periods, reflecting both operational needs and applicable Brazilian law.
+
+| Data type | Retention period |
+|---|---|
+| WhatsApp text messages | 6 months |
+| Audio and media files | 30 days (auto-deleted) |
+| AI interaction logs | 12 months |
+| Appointment records | 5 years |
+| Clinical notes | 20 years (CFM Resolution 1.821/2007 and Law 13.787/2018) |
+| Billing records | 5 years (Brazilian tax law) |
+
+After you cancel your subscription, you have **30 days** to export your data. Once that window closes, data may be permanently deleted in accordance with these retention rules.
+
+---
+
+## Patient rights under LGPD
+
+Under Article 18 of the LGPD, your patients have the following rights over their personal data:
+
+- **Access** — the right to confirm whether their data is being processed and to receive a copy of it
+- **Correction** — the right to have incomplete, inaccurate, or outdated data corrected
+- **Anonymisation, blocking, or deletion** — the right to request removal of data that is unnecessary or excessive
+- **Portability** — the right to receive their data in a structured, interoperable format
+- **Information about sharing** — the right to know with whom their data has been shared
+- **Revocation of consent** — the right to withdraw consent at any time
+- **Right to object** — the right to oppose processing in certain circumstances
+
+Because your clinic is the data controller, patient requests regarding their data should ultimately be addressed by you. To support those requests, direct them to **legal@usesenia.com.br** or through the dedicated rights portal at [usesenia.com/lgpd](https://usesenia.com/lgpd). Senia will respond within 15 days.
+
+---
+
+## Your responsibilities as controller
+
+As the data controller, your clinic carries specific obligations under the LGPD that Senia cannot fulfil on your behalf:
+
+- **Obtain appropriate consent.** Before activating Senia for patient-facing conversations, ensure your clinic has a legal basis for processing patient data through an AI-powered WhatsApp assistant. In most cases this is the "health care" basis under Art. 11, II, "f" of the LGPD, but your legal counsel should confirm this for your specific context.
+- **Ensure your communications comply with LGPD.** You are responsible for the content you configure in Senia's knowledge base and for the messages sent to patients under your clinic's name.
+- **Review and sign the Data Processing Agreement (DPA).** The DPA defines how Senia handles data on your behalf and formalises the controller-processor relationship required by the LGPD. It is included as part of your service contract.
+
+<Note>
+  For the full Privacy Policy, visit [usesenia.com/privacy-policy](https://usesenia.com/privacy-policy). For LGPD inquiries and data subject requests, contact **legal@usesenia.com.br** or use the dedicated portal at [usesenia.com/lgpd](https://usesenia.com/lgpd).
+</Note>

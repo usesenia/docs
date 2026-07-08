@@ -1,0 +1,140 @@
+---
+title: "Senia Troubleshooting: Fix Common Issues Fast"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step solutions for the most common Senia issues — from WhatsApp connection problems to scheduling conflicts and AI response quality."
+---
+
+Most issues with Senia fall into a few predictable categories. Work through the relevant section below before contacting support.
+
+---
+
+## Senia stopped responding on WhatsApp
+
+Patients are sending messages but Senia is not replying — or replies stopped mid-conversation.
+
+<Steps>
+  <Step title="Check the WhatsApp Business API connection">
+    Open your Senia platform and go to **Settings**. Look for the WhatsApp connection status indicator. If it shows disconnected or an error state, the API link between Senia and your WhatsApp Business number has been interrupted.
+  </Step>
+  <Step title="Verify the number is not in use elsewhere">
+    A WhatsApp Business number can only be active on one platform at a time. If someone on your team recently opened the number in the WhatsApp app or WhatsApp Business app directly, that can break the API connection. Make sure the number is not being used simultaneously in any WhatsApp app on any device.
+  </Step>
+  <Step title="Check for conflicting rules in the knowledge base">
+    Go to **Settings** and review your knowledge base configuration. Contradictory or incomplete rules can sometimes cause Senia to stall on certain conversation flows rather than respond.
+  </Step>
+  <Step title="Contact Senia support if the issue persists">
+    If none of the above resolves the problem, contact Senia support directly. Have your clinic name and a description of when the issue started ready to share.
+  </Step>
+</Steps>
+
+---
+
+## Patient received an incorrect appointment confirmation
+
+A patient was confirmed for a time slot that wasn't available, or the wrong professional or service was recorded.
+
+<Steps>
+  <Step title="Check the Agenda for availability conflicts">
+    Open the **Agenda** tab and review the appointment in question. Look for overlapping bookings or slots that should have been blocked but weren't.
+  </Step>
+  <Step title="Verify the integration is syncing correctly">
+    Go to **Settings > Integrations** and confirm that Senia's connection to your clinic management system is active and up to date. A sync delay or disconnection can cause Senia to see outdated availability.
+  </Step>
+  <Step title="Review the original conversation">
+    Open the **Conversations** tab and find the exchange where the confirmation was sent. Reading through it will show you exactly what information Senia had at the time and what it told the patient.
+  </Step>
+  <Step title="Correct the record and notify the patient">
+    Update the appointment in your clinic system to reflect the correct details. Then notify the patient directly — either through WhatsApp or by phone — to confirm the change and avoid any confusion on their end.
+  </Step>
+</Steps>
+
+---
+
+## Senia gave an inaccurate answer
+
+A patient received information that was incorrect, outdated, or didn't reflect your clinic's current policies.
+
+<Steps>
+  <Step title="Find the conversation">
+    Go to the **Conversations** tab and locate the exchange containing the incorrect response. Use the search or filter tools to find it by patient name, date, or keyword if needed.
+  </Step>
+  <Step title="Identify exactly what went wrong">
+    Read through the conversation to pinpoint the specific message that was inaccurate. Note whether it was a factual error, a misunderstanding of the patient's question, or a gap in Senia's knowledge.
+  </Step>
+  <Step title="Update the knowledge base">
+    Go to **Settings** and update the knowledge base with the correct information. Be as specific as possible — clear, unambiguous entries produce more reliable responses.
+  </Step>
+  <Step title="Add a dedicated FAQ entry if needed">
+    If the question is one patients ask regularly, add a specific FAQ entry to your knowledge base to address it directly. This reduces the likelihood of Senia inferring an answer from general context and getting it wrong again.
+  </Step>
+</Steps>
+
+<Tip>
+  After updating the knowledge base, test the fix by sending a message to Senia with a similar question to verify the new response is correct before patients encounter it again.
+</Tip>
+
+---
+
+## A conversation was not handed off to my team
+
+A conversation that should have been escalated to a human team member stayed with Senia instead.
+
+<Steps>
+  <Step title="Check your handoff rules">
+    Go to **Settings** and review the conditions you've configured for triggering a human handoff. Confirm the rule covers the type of conversation that was missed — for example, a specific keyword, topic, or patient sentiment threshold.
+  </Step>
+  <Step title="Verify team member notifications are enabled">
+    In Settings, check that notifications for handoff events are turned on and that the correct team member contact details are saved. An outdated phone number or disabled notification can silently swallow handoff alerts.
+  </Step>
+  <Step title="Check WhatsApp notifications on the team member's device">
+    Even if Senia fires the alert correctly, it won't reach your team member if WhatsApp notifications are muted or disabled on their phone. Ask them to check their notification settings for the WhatsApp app.
+  </Step>
+</Steps>
+
+---
+
+## Appointments are not appearing in my clinic system
+
+Appointments booked through Senia are not showing up in your clinic management system.
+
+<Steps>
+  <Step title="Check the integration status">
+    Go to **Settings > Integrations** and confirm that the connection to your clinic system is active. An amber or red status indicator means data is not flowing through.
+  </Step>
+  <Step title="Verify your API credentials are still valid">
+    Some clinic management systems rotate API tokens periodically. If credentials have expired, the integration will fail silently. Log into your clinic system and confirm the API key or token Senia is using is still current.
+  </Step>
+  <Step title="Re-authorize the connection if needed">
+    If credentials have changed or the connection has been revoked, go through the re-authorization flow in **Settings > Integrations** to reconnect Senia to your clinic system with fresh credentials.
+  </Step>
+</Steps>
+
+<Warning>
+  If you recently changed your password or security settings in your clinic management system, this will almost always invalidate the existing API connection. Re-authorize immediately after any such change.
+</Warning>
+
+---
+
+## I cannot log into the platform
+
+You're unable to access your Senia account due to a login error or forgotten credentials.
+
+<Steps>
+  <Step title="Use the Forgot Password flow">
+    On the Senia login page, click **Forgot password** and follow the prompts. A reset link will be sent to the email address associated with your account. Check your spam folder if it doesn't appear within a few minutes.
+  </Step>
+  <Step title="Check with your clinic administrator">
+    If the password reset email arrives but the new password doesn't work, or if you never receive the email, ask your clinic's Senia administrator to confirm that your account is active and has not been suspended or removed.
+  </Step>
+  <Step title="Contact Senia support">
+    If you've completed the above steps and still cannot log in, contact Senia support with your clinic name and the email address on your account. Support can investigate account-level issues that you cannot resolve from the login screen.
+  </Step>
+</Steps>
+
+---
+
+## Still stuck? Contact us
+
+<Note>
+  Senia support is available via WhatsApp at **+55 21 98474-1310** or by email at **legal@usesenia.com.br**. Support hours are Monday to Friday, 9 am to 6 pm (São Paulo time). When you reach out, include your clinic name, a description of the issue, and any relevant screenshots or conversation IDs — it helps the team get to a resolution faster.
+</Note>

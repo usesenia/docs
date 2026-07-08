@@ -1,0 +1,83 @@
+---
+title: "Conversations: Full Patient Chat History in Senia"
+sidebarTitle: "Conversations"
+description: "Browse and search the complete history of patient interactions handled by Senia, including transcripts of AI responses and human handoff moments."
+---
+
+The Conversations section gives you a complete audit trail of every patient interaction Senia has handled — useful for reviewing AI responses, picking up where Senia left off, and training the AI with corrections. Every message in both directions is logged here, including the exact moment a conversation was transferred to a human team member and what was said before and after the handoff.
+
+## Browsing conversations
+
+Use the search and filter tools at the top of the Conversations view to find exactly what you are looking for.
+
+<Steps>
+  <Step title="Search by patient">
+    Type a patient's name or WhatsApp number into the search bar. Senia matches partial names, so you do not need to type the full name to get results.
+  </Step>
+  <Step title="Filter by date range">
+    Use the date picker to narrow results to a specific day, week, or custom range. This is useful when you are reviewing a period after a service change or a particularly busy campaign.
+  </Step>
+  <Step title="Filter by status">
+    Select one or more statuses from the filter dropdown — **Automated**, **Handed off**, or **Pending** — to focus on the conversations most relevant to your task.
+  </Step>
+</Steps>
+
+## Conversation statuses
+
+Every conversation in Senia carries one of three statuses. Understanding them helps you triage your queue quickly.
+
+| Status | What it means |
+|---|---|
+| **Automated** | Senia handled the conversation entirely from start to finish, with no human involvement. The patient's request was understood and resolved through the AI and the connected knowledge base. |
+| **Handed off** | The conversation was transferred to a human team member. This happens when Senia reaches the limit of what she can resolve confidently — either because the patient's question fell outside the knowledge base, or because the patient explicitly asked to speak with a person. The full conversation context is preserved, so the staff member can read the entire history before replying. |
+| **Pending** | The conversation is open but waiting — either for the patient to reply, or for a staff member to take action. Pending conversations are highlighted in the list so they stand out. |
+
+## Taking over a conversation
+
+When Senia flags a conversation for human attention, your team receives a notification immediately.
+
+<Steps>
+  <Step title="Receive the notification">
+    The staff members you have assigned to receive handoff notifications in [Settings → Team access](/platform/settings) get an alert as soon as Senia transfers the conversation. The notification includes the patient's name and the last message in the thread.
+  </Step>
+  <Step title="Open the full transcript">
+    Click the conversation in the Conversations view to read the complete history from the beginning. You can see every message Senia sent, every message the patient sent, and the point at which the handoff occurred.
+  </Step>
+  <Step title="Reply directly from Senia">
+    Type your reply in the message input at the bottom of the conversation. The patient receives your message in the same WhatsApp thread they have been using — there is no new chat, no new number, no interruption to the experience.
+  </Step>
+  <Step title="Mark as resolved">
+    Once the patient's issue is sorted, mark the conversation as resolved. It moves out of the active queue and is archived for future reference.
+  </Step>
+</Steps>
+
+<Info>
+  Even after a human takes over, Senia does not disappear from the thread. If the patient sends a new message after the conversation is marked resolved, Senia re-engages automatically — so your team does not need to monitor closed chats.
+</Info>
+
+## Using conversation history for training
+
+The Conversations section is one of the most powerful tools for improving Senia's accuracy over time. When you spot a response that was wrong or incomplete, you can feed that directly back into the AI.
+
+<Steps>
+  <Step title="Find the incorrect response">
+    Browse or search for the conversation that contained the error. Open it and locate the specific message where Senia gave the wrong or incomplete answer.
+  </Step>
+  <Step title="Flag the message">
+    Click the flag icon next to the message. This marks it for review and adds it to the training queue.
+  </Step>
+  <Step title="Update the knowledge base">
+    Navigate to [Settings → Knowledge base](/platform/settings) and find the flagged entry. Edit the content to add the correct information, or create a new entry that covers the topic Senia missed.
+  </Step>
+  <Step title="Verify the fix">
+    Changes to the knowledge base take effect immediately. You can send a test message through your own WhatsApp to confirm that Senia now answers correctly.
+  </Step>
+</Steps>
+
+<Tip>
+  Make it a weekly habit to review conversations that were handed off to a human. Most handoffs point to a gap in the knowledge base — five minutes of editing in Settings can prevent the same gap from triggering another handoff next week.
+</Tip>
+
+<Note>
+  Message logs are retained for 6 months in line with Senia's data retention policy. If you need to export conversation records for compliance or audit purposes, contact the Senia support team.
+</Note>
